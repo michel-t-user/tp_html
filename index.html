@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" href="res/images/favicon.ico"> 
+    <title>Michel Dashboard</title> 
+  </head> 
+  <body> 
+    <header> 
+    <strong>Welcome to your dashboard!</strong> 
+</header>
+<section> 
+    <div> 
+        <img src="res/images/me.png" width="128" height="128" alt="My picture"> 
+    </div> 
+    <div> 
+        <ul> 
+            <li>Michel Michel</li> 
+            <li> 21/05/2025</li> 
+            <li> Software Engineering </li> 
+        </ul> 
+    </div> 
+    <div> 
+        <strong>18.65</strong> 
+    </div> 
+</section>
+<section> 
+    <h1>Courses</h1> 
+    <table> 
+        <thead> 
+        <tr> 
+            <th>#</th> 
+            <th>Course Title</th> 
+            <th>Semester</th> 
+            <th>Grade</th> 
+        </tr> 
+        </thead> 
+        <tbody> 
+        <tr> 
+            <td>1</td> 
+            <td> <a href="https://www.my-mooc.com/fr/">Agile software development</a> </td> 
+            <td>fall</td> 
+            <td>82</td> 
+        </tr> 
+        <tr> 
+            <td>2</td> 
+            <td>   <a href="https://www.coursera.org/fr-FR/courses?query=free&msockid=383ba1fb278b622c039eb3d926b363b1">Systems modelling</a> </td> 
+            <td>fall</td> 
+            <td>85</td> 
+        </tr> 
+        <tr> 
+            <td>3</td> 
+            <td> <a href="https://cursa.app/fr">Requirements Engineering</a>  </td> 
+            <td>fall</td> 
+            <td>99</td> 
+  </tr> 
+        <tr> 
+            <td>4</td> 
+            <td> <a href="https://openclassrooms.com/fr/">Human Computer Interaction</a> </td> 
+            <td>fall</td> 
+            <td>65</td> 
+        </tr> 
+        </tbody> 
+        <tfoot>
+            <tr>
+                <td colspan="3" style="text-align:right;"><strong>Average Grade</strong></td>
+                <td>82.75</td>
+        </tr> 
+        </tfoot>
+    </table> 
+</section> 
+<h2>Add a new course</h2>
+<section>
+    <form action="submit.php" method="post"> 
+        <label for="course">Course Title :</label> <br> 
+        <input type="text" id="course" name="course" placeholder="course"> <br>
+        <label for="sem">Semester:</label><br>
+        <select name="selecsem" id="sem">
+            <option value="sem1">Fall</option>
+            <option value="sem2">Spring</option>
+        </select><br>
+        <label for="att"> <strong>Attendance :</strong></label><br>
+        <input type="radio" id="att" name="att" value="yes"><label for="at">Virtual Attendance</label><br>
+         <input type="radio" id="att" name="att" value="yes"><label for="ate">Physique Attendance</label><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+<footer> 
+    <ul> 
+        <li> 
+            <a href="https://www.inpt.ac.ma/">moodle</a> 
+        </li>
+         <li> 
+            <a href="https://m.inpt.ac.ma/">Courses</a> 
+        </li> 
+    </ul> 
+</footer>
+  </body> 
+</html> 
